@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SMK STUDIO - Bubble Breaker Game Case Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="case-study-page">
+
+    <!-- Shared Header -->
+    <div class="header-wrapper" style="position: sticky; top: 0; background-color: var(--bg-case); z-index: 100;">
+        <header>
+            <div class="brand">
+                <a href="index.html" style="display: flex; align-items: center;">
+                    <img src="/image/logo-black.png" alt="SMK" style="height: 26px; width: auto;">
+                </a>
+            </div>
+            <nav class="nav-center">
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="work.html">WORK</a>
+            </nav>
+            <div class="nav-right">
+                <a href="enquire.html" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="marquee-container">
+                        <div class="marquee-content">
+                            <span>&rarr;&nbsp;ENQUIRE</span>
+                            <span>&rarr;&nbsp;ENQUIRE</span>
+                            <span>&rarr;&nbsp;ENQUIRE</span>
+                        </div>
+                        <div class="marquee-content" aria-hidden="true">
+                            <span>&rarr;&nbsp;ENQUIRE</span>
+                            <span>&rarr;&nbsp;ENQUIRE</span>
+                            <span>&rarr;&nbsp;ENQUIRE</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </header>
+        <div class="header-second-line"></div>
+    </div>
+
+    <main class="cs-main">
+
+        <!-- Hero Section -->
+        <section class="cs-hero">
+            <h1>BUBBLE DASH GAME</h1>
+            <div class="cs-meta-grid">
+                <div class="meta-col">
+                    <span class="meta-label">ROLE</span>
+                    <span class="meta-value">Frontend Developer</span>
+                </div>
+                <div class="meta-col">
+                    <span class="meta-label">STACK</span>
+                    <span class="meta-value">HTML5, CSS3, Vanilla JS</span>
+                </div>
+                <div class="meta-col">
+                    <span class="meta-label">PLATFORM</span>
+                    <span class="meta-value">Web Interactive</span>
+                </div>
+                <div class="meta-col">
+                    <span class="meta-label">LIVE PROJECT</span>
+                    <span class="meta-value">Embedded Below</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content (Editorial Two-Column Grid) -->
+        <div class="cs-content-wrapper">
+
+            <section class="cs-row">
+                <div class="cs-title">OVERVIEW</div>
+                <div class="cs-text">
+                    <p>The Bubble Game is an interactive, underwater survival game built entirely from scratch using fundamental web technologies: HTML5, CSS3, and Vanilla JavaScript. The project was designed as a technical exercise to build a robust game
+                        loop, manage moving objects, and deliver a smooth user experience without relying on external game engines or frameworks.</p>
+                    <p>The mechanics require focus and reflexes: the player controls a red fish navigating an aquatic environment. The objective is to collect as many rising bubbles as possible, with each bubble granting 1 point. However, the player must
+                        actively dodge randomly generated yellow enemy fish—a single collision triggers an immediate Game Over.</p>
+                </div>
+            </section>
+
+            <section class="cs-row">
+                <div class="cs-title">DEVELOPMENT & LOGIC</div>
+                <div class="cs-text">
+                    <p>Building a 2D game in Vanilla JavaScript requires meticulous attention to the DOM, position tracking, and continuous rendering. I architected the game to ensure high performance while managing multiple moving elements simultaneously.</p>
+                    <ul class="cs-list">
+                        <li><strong>Collision Detection:</strong> Developed custom JavaScript logic to constantly calculate the intersecting coordinates between the player (red fish), enemies (yellow fish), and collectibles (bubbles) to accurately trigger
+                            scoring or game-over states.</li>
+                        <li><strong>The Game Loop:</strong> Implemented a fluid, continuous loop that updates the positions of the floating bubbles and swimming enemies on every frame, ensuring smooth movement across the screen.</li>
+                        <li><strong>State Management:</strong> Variables like the current score, enemy spawn rates, and active game status are managed dynamically through JavaScript, instantly reflecting changes on the UI.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 2-Column Image Grid -->
+            <div class="cs-image-grid">
+                <div class="cs-image-wrapper">
+                    <!-- Placeholder for Gameplay Image -->
+                    <img src="./image/bubble-dash-casestudy/scoring.png" alt="Underwater Game UI" class="lightbox-trigger">
+                    <div class="cs-caption">Fig 1. The main gameplay interface, featuring the player controlling the red fish to collect bubbles.</div>
+                </div>
+                <div class="cs-image-wrapper">
+                    <!-- Replace src with your actual Screenshot 2026-10-21 at 1.48.13 PM.jpg -->
+                    <img src="./image/bubble-dash-casestudy/fail.png" alt="Game Over Screen" class="lightbox-trigger">
+                    <div class="cs-caption">Fig 2. Collision detection triggering the final score and Game Over state.</div>
+                </div>
+            </div>
+
+            <section class="cs-row">
+                <div class="cs-title">UI & ASSETS</div>
+                <div class="cs-text">
+                    <p>To make the game visually engaging, I utilized clean 2D graphical assets layered over a vibrant, stylized ocean background. CSS3 was combined with JavaScript-driven coordinate updates to bring the environment to life.</p>
+                    <p>The interface was kept intentionally minimalist, placing the score counter neatly in the top corner and ensuring the core survival mechanics remained the absolute focus for the player.</p>
+                </div>
+            </section>
+
+            <!-- Interactive Playable Game Section -->
+            <section class="cs-row">
+                <div class="cs-title">PLAY IT LIVE</div>
+                <div class="cs-text">
+                    <p>Experience the mechanics firsthand. I have embedded the live game environment directly below—control the red fish, collect the bubbles for points, and avoid the yellow fish!</p>
+                </div>
+            </section>
+
+            <!-- Game Embed with Start Screen -->
+            <div class="cs-iframe-container cs-image-breaker" style="padding: 0 20px 80px 20px;">
+                <div style="position: relative; width: 100%; height: 650px; border-radius: 4px; border: 1px solid var(--text-dark); background-color: #ffffff; overflow: hidden;">
+
+                    <!-- Start Screen Overlay -->
+                    <div id="game-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #e9e9e6; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 10;">
+                        <!-- Using 'Aqua Dodge' as the title, change it if you picked a different name! -->
+                        <h2 style="color: #000000; margin-bottom: 24px; letter-spacing: 2px;">BUBBLE DASH</h2>
+                        <button id="start-game-btn" class="prototype-btn" style="border: none; cursor: pointer;">START GAME &rarr;</button>
+                    </div>
+
+                    <!-- Iframe (src is initially empty so it doesn't auto-start) -->
+                    <iframe id="game-iframe" data-src="bubble-game/index.html" title="Interactive Bubble Game" frameborder="0" style="width: 100%; height: 100%; display: block;"></iframe>
+
+                </div>
+            </div>
+
+            <div class="mobile-fallback-message" style="margin: 0 20px 80px 20px;">
+                <h3 style="margin-bottom: 15px; font-family: 'JetBrains Mono', monospace; font-size: 14px;">DESKTOP OPTIMIZED</h3>
+                <p style="margin-bottom: 25px; font-size: 14px; opacity: 0.8;">This custom-coded experience requires a larger screen or keyboard/mouse to interact properly.</p>
+                <!-- This button opens the game in a new tab so the mobile browser can handle the zooming -->
+                <a href="bubble-game/index.html" target="_blank" class="prototype-btn" style="background-color: var(--bg-case); color: var(--text-dark);">OPEN FULLSCREEN &rarr;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer" style="border-top: 1px solid var(--text-dark);">
+        <div>&copy;2026</div>
+        <div class="col-right">mksreehari97@gmail.com</div>
+        <div class="col-hide-mobile"></div>
+        <div class="col-right col-hide-mobile">+1 905 442 4678</div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage" alt="Expanded view">
+    </div>
+
+    <!-- Game Start Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('game-overlay');
+            const iframe = document.getElementById('game-iframe');
+            const startBtn = document.getElementById('start-game-btn');
+
+            if (startBtn) {
+                startBtn.addEventListener('click', () => {
+                    // 1. Hide the dark overlay
+                    overlay.style.display = 'none';
+                    // 2. Inject the game URL into the iframe to start it fresh
+                    iframe.src = iframe.getAttribute('data-src');
+                    // 3. Focus the iframe so the user's controls work immediately
+                    iframe.focus();
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
